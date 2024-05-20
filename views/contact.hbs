@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="css/home.css">
+   
+	<link rel="stylesheet" href="css/chatbot.css">
+	 
+
+</head>
+
+
+<body>
+	<header>
+        <div class="logo">Helping<b style="color: #06C167;">Hands</b></div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="/" >Home</a></li>
+                <li><a href="/about" >About</a></li>
+                <li><a href="/contact" class="active">Contact</a></li>
+                 <li><a href="/blogs">Blogs</a></li>
+                <li><a href="/gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        hamburger=document.querySelector(".hamburger");
+        hamburger.onclick =function(){
+            navBar=document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <section class="cover" >
+        
+    </section>
+	<p class="heading" style=" margin: 20px;">contact us </p>
+    
+     
+	
+   <!-- <h1 class="heading">Contact Us</h1>  -->
+   <div class="contact-form"> 
+    <form action="/contact" method="post"> 
+     <label for="name">Name:</label> 
+     <input type="text" id="name" name="name1">
+     <br> 
+     <label for="email">Email:</label> 
+     <input type="email" id="email" name="email1">
+     <br> 
+     <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+     <br> 
+     <input type="submit" value="Send"> 
+    </form> 
+   </div> 
+   <div class="contact-info" style="padding: 10px;"> 
+    <p>Email: helpinghands@gmail.com</p> 
+    <p>Phone: 555-555-5555</p> 
+    <p>Address: 123 Main St, Anytown</p> 
+   </div> 
+ 
+
+  <div class="chatbot" style="padding: 30px; background-color: rgba(151, 243, 199, 0.5);">
+ <p style="font-size: 23px; text-align: center;">Chat Bot Support <img src="img/bot-mini.png" alt=""height="20"></p>
+ <!-- <img src="chitti.jpeg" alt="Robot cartoon" height="300vh"> -->
+	
+ <div id="container" class="container">
+    
+
+		<div id="chat" class="chat">
+			<div id="messages" class="messages"></div>
+			<input id="input" type="text" placeholder="Say something..." autocomplete="off" />
+		</div>
+       
+	</div>
+	    <div class="help">
+    <p style="font-size: 23px; text-align: center; padding:10px;">Help & FAQs?</p>
+
+{{!-- <button class="accordion">how to donate food ?</button>
+<div class="panel">
+  <p>1)click on <a href="fooddonate.html">donate</a> in home page </p>
+  <p>2)fill the details </p>
+  <p>3)click on submit</p>
+ <img src="img/mobile.jpg" alt="" width="100%">
+</div> --}}
+<button class="accordion">How do I donate items?</button>
+<div class="panel">
+  <p style="padding: 10px;">To begin your donation journey, head to the homepage and click on the "Donate" button. You'll be directed to our donation page, where you'll find another "Donate" button. Click on it to access our donation form, where you can list the items you're eager to contribute. Once submitted, organizations in need will be promptly notified, and we'll facilitate the connection to ensure your donation reaches those who need it most. Let's make a difference together, one item at a time.</p>
+  </div>
+
+<button class="accordion">How will my donation be used?</button>
+<div class="panel">
+  <p style="padding: 10px;"> Your donation will be used to support our mission and the various programs and initiatives that we have in place. Your donation will help us to continue providing assistance and support to those in need. You can find more information about our programs and initiatives on our website. If you have any specific questions or concerns, please feel free to contact us</p>
+</div>
+
+
+<button class="accordion">Can I donate anonymously?</button>
+<div class="panel">
+  <p style="padding: 10px;">During the donation process, you have the option to contribute anonymously by simply selecting the "Anonymous Donation" checkbox on the donation form. Your privacy matters to us, and we respect your decision to give discreetly. Thank you for your generosity and commitment to making a difference in the lives of others.</p>
+  
+</div>
+
+<button class="accordion">How can I get involved beyond donating items?</button>
+<div class="panel">
+  <p style="padding: 10px;">There are many ways to get involved beyond donating items! You can volunteer with organizations in your community, spread the word about HelpingHands on social media, or even organize donation drives to collect items for those in need.</p>
+  
+</div>
+
+  </div>
+  </div>
+  <!-- <div class="img">
+    <img src="chitti.jpg" alt="Robot cartoon" height="300" width="400">
+    </div>  -->
+    <footer class="footer">
+        <div class="footer-left col-md-4 col-sm-6">
+          <p class="about">
+            <span> About us</span>The basic concept of this project  HelpingHands is to collect the excess/leftover  food and other items from donors such as Clothes, Food Grains, Stationary Items, Utensils, Old Newspaers etc. and distribute to  the  needy people .
+     </p>
+        
+        </div>
+        <div class="footer-center col-md-4 col-sm-6">
+          <div>
+            <p><span> Contact</span> </p>
+            
+          </div>
+          <div>
+        
+            <p> (+00) 0000 000 000</p>
+            
+          </div>
+          <div>
+        
+            <p><a href="#"> helpinghands@gmail.com</a></p>
+          </div>
+          <div class="sociallist">
+            <ul class="social">
+            <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+            <li><a href="https://github.com/kishor-23"><i class="fa fa-github" style="font-size:50px;color: black;"></i></a></li>
+           </ul>
+          </div>
+        </div>
+        <div class="footer-right col-md-4 col-sm-6">
+          <h2> Helping<span>Hands</span></h2>
+          <p class="menu">
+            <a href="/"> Home</a> |
+            <a href="/about"> About</a> |
+            <a href="/blogs"> Blogs</a> |
+            <a href="/contact"> Contact</a>
+          </p>
+          <p class="name"> HelpingHands &copy; 2024</p>
+        </div>
+      </footer>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    
+</body>
+<script type="text/javascript" src="chatbot.js" ></script>
+<script type="text/javascript" src="constants.js" ></script>
+<script type="text/javascript" src="speech.js" ></script>
+	<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+
+</html>

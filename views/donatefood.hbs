@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Donor</title>
+  <link rel="stylesheet" href="css/donatefood.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="unique">Donate Items</h1>
+  </header>
+
+  <main>
+    <form action="/donatefood" method ="post" id="donation-form" >
+      <label for="name">Full name:</label>
+      <input type="text" id="name" name="name3" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name ="email3" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" name="phone" required>
+
+      <label for="address">Address</label>
+      <textarea id="address" name="address" required></textarea>
+       
+      <label for="donationtype">Type of Donation</label>
+                    <select id="donationtype" name="donationtype" required>
+                        <option value="">Select</option>
+                        <option value="clothes">Clothes</option>
+                        <option value="food">Food Grains</option>
+                        <option value="stationary">Stationary Items</option>
+                        <option value="utensils">Utensils</option>
+                        <option value="newspapers">Old Newspapers</option>
+                    </select>
+      
+                    <label for="quantity">Quantity/Description</label>
+                    <textarea id="quantity" name="quantity" required></textarea>
+
+                    <!-- <label for="condition">Condition</label>
+                    <input type="text" id="condition" name="condition"> -->
+
+                    <label for="pickup">Pickup/Drop-off Preference</label>
+                    <input type="text" id="pickup" name="pickup">
+
+                    <label for="datetime">Preferred Date/Time</label>
+                    <input type="text" id="datetime" name="datetime"> 
+                    
+      <!-- <label for="">Number of Meals:</label>
+      <input type="number" id="meals" min="1" required> -->
+
+      <button type="submit">Donate</button>
+    </form>
+
+    <div id="success-message" class="hidden">
+      Thank you for your donation!
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
